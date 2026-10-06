@@ -2,8 +2,20 @@
 # Remove a block (title + url) to remove that link from the menu.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Research"
+    url: /research/
+
+  - title: "Articles"
+    url: /articles/
+
+  - title: "Books"
+    url: /books/
+
+  - title: "Book Chapters"
+    url: /book-chapters/
+
+  - title: "Other Academic"
+    url: /other-academic/
 
   - title: "Popular Writing"
     url: /popular-writing/

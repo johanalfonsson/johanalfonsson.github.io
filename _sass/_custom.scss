@@ -1,0 +1,505 @@
+/* ==========================================================================
+   Custom look: black page, white text, the book cover as backdrop
+   ========================================================================== */
+
+$ink                        : #000000;
+$paper                      : #ecebe6;   // body text
+$white                      : #ffffff;   // headings, links
+$ash                        : #a29f97;   // secondary text
+$rule                       : #3a3936;   // hairlines
+$flag                       : #f2361e;   // the red of the flag on the book cover
+
+$panel-breakpoint           : 1200px;
+
+:root,
+:root[data-theme="dark"] {
+  --global-base-color                 : #{$flag};
+  --global-bg-color                   : #{$ink};
+  --global-footer-bg-color            : transparent;
+  --global-border-color               : #{$rule};
+  --global-dark-border-color          : #{$rule};
+  --global-code-background-color      : #1c1c1b;
+  --global-code-text-color            : #{$paper};
+  --global-fig-caption-color          : #{$ash};
+  --global-link-color                 : #{$white};
+  --global-link-color-hover           : #{$white};
+  --global-link-color-visited         : #{$white};
+  --global-masthead-link-color        : #{$paper};
+  --global-masthead-link-color-hover  : #{$white};
+  --global-text-color                 : #{$paper};
+  --global-text-color-light           : #{$ash};
+  --global-thead-color                : #1c1c1b;
+
+  /* How bright the book cover is: the front page overrides this */
+  --cover-brightness                  : 0.55;
+  --cover-shade                       : 0.88;
+  --panel-width                       : 0px;
+  color-scheme: dark;
+}
+
+/* The site is always dark, so the light/dark switch is hidden */
+#theme-toggle {
+  display: none !important;
+}
+
+::selection {
+  color: $ink;
+  background: $paper;
+}
+
+/* ==========================================================================
+   Backdrop: the cover illustration
+   ========================================================================== */
+
+html {
+  background-color: $ink;
+}
+
+body {
+  background: transparent;
+}
+
+/* Small screens: the illustration fills the screen behind a dark veil */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-color: $ink;
+  background-image: url("/images/background.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: $ink;
+  opacity: var(--cover-shade);
+}
+
+/* Large screens: the illustration stands as a tall panel on the right,
+   and the text keeps to the black space on the left */
+@media screen and (min-width: $panel-breakpoint) {
+  :root,
+  :root[data-theme="dark"] {
+    --panel-width: #{unquote("min(34vw, 67.6vh)")};
+  }
+
+  body::before {
+    left: auto;
+    width: var(--panel-width);
+    background-image: linear-gradient(90deg, $ink 0%, rgba(0, 0, 0, 0) 28%), url("/images/background.jpg");
+    background-size: 100% 100%, cover;
+    filter: brightness(var(--cover-brightness));
+  }
+
+  body::after {
+    display: none;
+  }
+
+  /* The menu bar runs the full width, aligned with the text below */
+  .masthead__inner-wrap {
+    max-width: none;
+    margin-left: 0;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  #main,
+  .page__footer footer {
+    max-width: none;
+    margin-left: 0;
+    margin-right: var(--panel-width);
+    padding-left: 2.5rem;
+    padding-right: 3rem;
+  }
+
+  /* Fixed sidebar column and text column side by side */
+  .sidebar {
+    width: 12.5rem;
+    max-width: 12.5rem;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .page {
+    float: none;
+    width: auto;
+    margin-left: 15.5rem;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* ==========================================================================
+   Masthead and menu
+   ========================================================================== */
+
+.masthead {
+  background: $ink;
+
+  &::after {
+    background: $rule;
+  }
+}
+
+.masthead__menu-item {
+  background-color: transparent;
+  font-family: $grotesk;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.005em;
+
+  a {
+    color: $paper;
+    padding-bottom: 0.15em;
+    border-bottom: 2px solid transparent;
+  }
+
+  a:hover {
+    color: $white;
+    border-bottom-color: $flag;
+  }
+
+  &--lg {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: $white;
+  font-weight: inherit;
+  border-bottom: 2px solid $flag;
+}
+
+.greedy-nav {
+  background: $ink;
+
+  a {
+    color: $paper;
+  }
+
+  button {
+    background-color: $ink;
+  }
+
+  .navicon,
+  .navicon::before,
+  .navicon::after {
+    background: $paper;
+  }
+
+  .hidden-links {
+    background: $ink;
+    border-color: $rule;
+
+    &::before {
+      border-color: $rule transparent;
+    }
+
+    &::after {
+      border-color: $ink transparent;
+    }
+
+    a {
+      color: $paper;
+    }
+
+    a:hover {
+      color: $white;
+      background: #1c1c1b;
+    }
+  }
+}
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.author__avatar img {
+  border-radius: 0;
+  padding: 0;
+  border: 0;
+
+  @include breakpoint($large) {
+    width: 100%;
+    max-width: 200px;
+    padding: 0;
+    border: 0;
+  }
+}
+
+.author__avatar {
+  width: 56px;
+
+  @include breakpoint($large) {
+    width: auto;
+  }
+}
+
+.sidebar .author__name {
+  font-family: $grotesk;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: $white;
+  line-height: 1.15;
+}
+
+.sidebar .author__bio,
+.sidebar p,
+.sidebar li {
+  font-family: $grotesk;
+  color: $ash;
+}
+
+.author__urls {
+  background: $ink;
+  border-color: $rule;
+
+  a {
+    color: $paper;
+  }
+
+  a:hover {
+    color: $white;
+    text-decoration: underline;
+    text-decoration-color: $flag;
+  }
+
+  i {
+    color: $ash;
+  }
+}
+
+.author__urls-wrapper .btn--inverse {
+  color: $paper;
+  background: $ink;
+  border: 1px solid $rule;
+  font-family: $grotesk;
+}
+
+/* ==========================================================================
+   Page text
+   ========================================================================== */
+
+.page__title {
+  font-family: $grotesk;
+  font-weight: 700;
+  font-size: #{unquote("clamp(2.4rem, 1.4rem + 3.2vw, 4.4rem)")};
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  color: $white;
+  margin-bottom: 0.7em;
+}
+
+.page__content {
+  font-family: $newsreader;
+  font-size: 1.06rem;
+  line-height: 1.62;
+  color: $paper;
+  max-width: 44em;
+
+  h2 {
+    font-family: $grotesk;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    color: $white;
+    margin-top: 2.2em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.45em;
+    border-bottom: 1px solid $rule;
+  }
+
+  strong {
+    color: $white;
+    font-weight: 600;
+  }
+
+  a,
+  a:visited {
+    color: $white;
+    text-decoration: underline;
+    text-decoration-color: $flag;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.18em;
+  }
+
+  a:hover {
+    color: $white;
+    text-decoration-thickness: 2px;
+  }
+
+  /* Reference lists: no bullets, hanging indent */
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  ul li {
+    padding-left: 1.6em;
+    text-indent: -1.6em;
+    margin-bottom: 0.85em;
+  }
+}
+
+/* ==========================================================================
+   Books
+   ========================================================================== */
+
+.book {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr;
+  grid-gap: 1.25rem;
+  margin-bottom: 2.75rem;
+
+  @include breakpoint($medium) {
+    grid-template-columns: 10rem 1fr;
+    grid-gap: 2rem;
+  }
+}
+
+.book__cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.book__text:first-child {
+  grid-column: 1 / -1;
+}
+
+.page__content .book__text h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+/* ==========================================================================
+   Research projects
+   ========================================================================== */
+
+.project {
+  margin-top: 2.25rem;
+  padding-top: 2.25rem;
+  border-top: 1px solid $rule;
+}
+
+.project:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.page__content .project h2 {
+  margin-top: 0;
+  margin-bottom: 0.45em;
+  padding-bottom: 0;
+  border-bottom: 0;
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.page__content .project__meta {
+  font-family: $grotesk;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: $ash;
+  margin-bottom: 1em;
+}
+
+.page__content .project__award {
+  font-family: $grotesk;
+  font-weight: 500;
+  font-size: 0.98rem;
+  line-height: 1.45;
+  color: $white;
+  margin-top: 1.4em;
+  padding-left: 0.9em;
+  border-left: 2px solid $flag;
+}
+
+/* ==========================================================================
+   Publications overview
+   ========================================================================== */
+
+.page__content ul.pub-index li {
+  padding-left: 0;
+  text-indent: 0;
+  font-family: $grotesk;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+/* The footer sits after the text instead of being pinned to the screen */
+.page__footer {
+  position: static;
+  float: none;
+  margin-top: 4em;
+  background: transparent;
+  color: $ash;
+  border-top: 0;
+  font-family: $grotesk;
+
+  footer {
+    border-top: 1px solid $rule;
+    padding-top: 1.5em;
+  }
+
+  /* No blog, so the feed link is left out */
+  .page__footer-follow {
+    display: none;
+  }
+
+  .page__footer-copyright {
+    font-family: $grotesk;
+  }
+
+  a {
+    color: $ash;
+  }
+
+  a:hover {
+    color: $white;
+  }
+}
+
+/* ==========================================================================
+   Keyboard focus and reduced motion
+   ========================================================================== */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid $flag;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #main,
+  .masthead {
+    animation: none !important;
+  }
+}

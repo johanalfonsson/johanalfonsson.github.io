@@ -22,12 +22,14 @@ repository               : "johanalfonsson/johanalfonsson.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"   # upload your photo as images/profile.png
+  avatar           : "profile.jpg"
   name             : "Johan Alfonsson"
   pronouns         : # example: "she/her"
   bio              : "PhD in sociology. Researching work, class and precarious employment."
   location         :
-  employer         : "Halmstad University"
+  employer         : # one line per affiliation
+    - "Halmstad University"
+    - "University of Gothenburg"
   uri              : # URL
   email            : "johan.alfonsson@socav.gu.se"
 

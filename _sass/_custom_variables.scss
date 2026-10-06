@@ -1,0 +1,12 @@
+/* ==========================================================================
+   Custom typefaces (the fonts are loaded in _includes/head/custom.html)
+   ========================================================================== */
+
+$grotesk                    : "Familjen Grotesk", "Helvetica Neue", Arial, sans-serif;
+$newsreader                 : "Newsreader", Georgia, "Times New Roman", serif;
+
+$sans-serif                 : $grotesk;
+$sans-serif-narrow          : $grotesk;
+$global-font-family         : $newsreader;
+$header-font-family         : $grotesk;
+$caption-font-family        : $newsreader;

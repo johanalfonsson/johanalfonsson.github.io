@@ -1,36 +1,49 @@
 ---
-layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+{% comment %}
+  To add a publication: write it as a new line starting with "* " under the
+  right heading below. Everything between "capture" and "endcapture" is
+  ordinary Markdown.
+{% endcomment %}
+{% capture publications %}
+See also my [Google Scholar profile](https://scholar.google.com/citations?user=5Ufl224AAAAJ). Op-eds and essays are listed under [Popular Writing](/popular-writing/).
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+Peer-reviewed articles
+------
+* Vulkan, P., **Alfonsson, J.** & Berglund, T. (2025). Who benefits from the Industrial Agreement? Uncovering the trends and structures at play in the Swedish wage-setting model. *Journal of Industrial Relations.*
+* **Alfonsson, J.** (2025). The myth of middle-class proletarianisation: Defining and examining class in Sweden from a neo-Marxist perspective. *Capital & Class.* [doi:10.1177/03098168251341166](https://doi.org/10.1177/03098168251341166)
+* **Alfonsson, J.** (2025). Exploring split shifts in Swedish elderly care: A case study through the lens of power resources theory. *International Journal of Social Welfare, 34*(3).
+* Oppegaard, S., **Alfonsson, J.**, Rasmussen, S. & Immonen, J. (2025). Trajectories of platform-mediated gig work in Nordic taxi and food delivery industries. *Nordic Journal of Working Life Studies.* [doi:10.18291/njwls.152855](https://doi.org/10.18291/njwls.152855)
+* **Alfonsson, J.** (2024). Dismantling employees' power resources in the Swedish labour market: An ideological theoretical approach. *Nordic Welfare Research, 9*(1), 28–47. [doi:10.18261/nwr.9.1.3](https://doi.org/10.18261/nwr.9.1.3)
+* **Alfonsson, J.**, Berglund, T. & Vulkan, P. (2024). Have low-paid jobs increased in the Swedish labor market? Defining low pay in the context of the Nordic model. *Economic and Industrial Democracy, 45*(4), 1090–1111. [doi:10.1177/0143831X231215597](https://doi.org/10.1177/0143831X231215597)
+* **Alfonsson, J.** (2022). Arv, miljö eller både och? En kritisk realistisk kritik av heritabilitetsmetodiken [Heredity, environment, or both? A critical realist critique of the heritability methodology]. *Sociologisk Forskning, 59*(1–2), 127–148. [doi:10.37062/sf.59.23210](https://doi.org/10.37062/sf.59.23210)
+* Berglund, T., Håkansson, K., Isidorsson, T. & **Alfonsson, J.** (2017). Temporary employment and the future labor market status. *Nordic Journal of Working Life Studies, 7*(2), 27–48.
+* Berglund, T., Håkansson, K., Isidorsson, T. & **Alfonsson, J.** (2017). Tidsbegränsat anställdas framtida arbetsmarknadssituation [The future labour market situation of temporary employees]. *Arbetsmarknad & Arbetsliv, 23*(2), 47–66.
+* **Alfonsson, J.** (2015). Permanent nykomling: Om behovsanställdas villkor [Permanent newcomer: On the conditions of on-call workers]. *Arbetsmarknad & Arbetsliv, 21*(3), 7–22.
 
-{% include base_path %}
+Books
+------
+* **Alfonsson, J.** (2025). *Vad hände med arbetarklassen? Om svek, makt och ojämlikhet i Sverige* [What happened to the working class? On betrayal, power and inequality in Sweden]. Arkiv förlag.
+* **Alfonsson, J.** (2022). *Det otrygga arbetslivet i Sverige: Dess framväxt och konsekvenser* [Precarious working life in Sweden: Its emergence and consequences]. Studentlitteratur.
+* **Alfonsson, J.** (2020). *Alienation och arbete: Unga behovsanställdas villkor i den flexibla kapitalismen* [Alienation and work: The conditions of young on-call workers in flexible capitalism]. Lund: Arkiv förlag. Doctoral dissertation.
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+Book chapters
+------
+* **Alfonsson, J.** (2025). David Harvey. In E. Johansson Wilén, L. Schack, C. Wilén & J. Örestig Kling (Eds.), *Samtida marxistisk teori* [Contemporary Marxist theory]. Bokförlaget Daidalos.
+* **Alfonsson, J.** (2025). Otrygga arbeten [Precarious jobs]. In B. Furåker & L. Björk (Eds.), *Arbetslivet* [Working life]. Studentlitteratur.
+* **Alfonsson, J.** (2022). (O)frihet i den flexibla kapitalismen [(Un)freedom in flexible capitalism]. In N. Altermark & M. Dahlstedt (Eds.), *Bortom systemskiftet: Mot en ny gemenskap* [Beyond the system shift: Towards a new community]. Verbal förlag.
+* **Alfonsson, J.** (2022). Tillsammans med de nyss levande [Together with the recently living]. In A. Björnsson & B. Rombach (Eds.), *Lägga döden till rätta: Hur död administreras i vårt samhälle* [Putting death in order: How death is administered in our society]. Stockholm: Santérus förlag.
+* **Alfonsson, J.** (2021). Nomaderna på den svenska arbetsmarknaden [The nomads of the Swedish labour market]. In D. Suhonen, G. Therborn & J. Weithz (Eds.), *Klass i Sverige* [Class in Sweden]. Lund: Arkiv förlag.
+* **Alfonsson, J.** (2021). Sveriges rörelse mot flexibel kapitalism [Sweden's movement towards flexible capitalism]. In T. Wedin, E. Johansson Wilén & C. Wilén (Eds.), *Ideologikritik: En introduktion* [Ideology critique: An introduction]. Lund: Studentlitteratur.
 
-
-
+Other academic writing
+------
+* **Alfonsson, J.** (2025). Arbetarkollektiv och maktresurser: Introduktion till Lysgaard och Korpi [Worker collectives and power resources: An introduction to Lysgaard and Korpi]. *Fronesis*, no. 88, 202–215.
+* **Alfonsson, J.** (2023). Self-determination, alienation, and the value-form. *Legal Form: A Forum for Marxist Analysis and Critique.*
+* **Alfonsson, J.** (2023). Review of Kohei Saito, *Marx in the Anthropocene*. *Sociologisk Forskning, 60*(2), 201–204.
+* **Alfonsson, J.** (2017). Review of Magnus Hörnqvist, *Klass* [Class]. *Arbetsmarknad & Arbetsliv, 23*(2), 111–115.
+{% endcapture %}
+{{ publications | markdownify }}

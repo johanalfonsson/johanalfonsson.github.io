@@ -13,7 +13,7 @@ title                    : "Johan Alfonsson"
 title_separator          : "-"
 name                     : &name "Johan Alfonsson"
 description              : &description "Johan Alfonsson, sociologist. Research on work, class and precarious employment."
-url                      : https://johanalfonsson.github.io
+url                      : https://johanalfonsson.com
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "johanalfonsson/johanalfonsson.github.io"
 

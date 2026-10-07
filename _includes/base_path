@@ -1,5 +1,4 @@
-{% if site.url %}
-  {% assign base_path = site.url | append: site.baseurl %}
-{% else %}
-  {% assign base_path = site.github.url %}
-{% endif %}
+{% comment %}
+  Links to pages, styles and images are relative to the site root, so they
+  work on any address (johanalfonsson.github.io or johanalfonsson.com).
+{% endcomment %}{% assign base_path = site.baseurl %}

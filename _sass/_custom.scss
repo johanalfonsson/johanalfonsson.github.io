@@ -437,6 +437,29 @@ body::after {
   border-left: 2px solid $flag;
 }
 
+.page__content .project h2 + .project__award {
+  margin-top: 0.2em;
+  margin-bottom: 0.9em;
+}
+
+/* ==========================================================================
+   Latest publication on the front page
+   ========================================================================== */
+
+.page__content .latest__title {
+  font-family: $grotesk;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  margin-bottom: 0.35em;
+
+  a,
+  a:visited {
+    color: $white;
+    text-decoration-thickness: 1px;
+  }
+}
+
 /* ==========================================================================
    Publications overview
    ========================================================================== */

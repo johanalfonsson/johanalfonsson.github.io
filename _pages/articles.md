@@ -6,8 +6,8 @@ author_profile: true
 
 Peer-reviewed journal articles. A complete citation record is available on [Google Scholar](https://scholar.google.com/citations?user=5Ufl224AAAAJ).
 
+* **Alfonsson, J.** (2026). The myth of middle-class proletarianisation: Defining and examining class in Sweden from a neo-Marxist perspective. *Capital & Class.* [doi:10.1177/03098168251341166](https://doi.org/10.1177/03098168251341166)
 * Vulkan, P., **Alfonsson, J.** & Berglund, T. (2025). Who benefits from the Industrial Agreement? Uncovering the trends and structures at play in the Swedish wage-setting model. *Journal of Industrial Relations.*
-* **Alfonsson, J.** (2025). The myth of middle-class proletarianisation: Defining and examining class in Sweden from a neo-Marxist perspective. *Capital & Class.* [doi:10.1177/03098168251341166](https://doi.org/10.1177/03098168251341166)
 * **Alfonsson, J.** (2025). Exploring split shifts in Swedish elderly care: A case study through the lens of power resources theory. *International Journal of Social Welfare, 34*(3).
 * Oppegaard, S., **Alfonsson, J.**, Rasmussen, S. & Immonen, J. (2025). Trajectories of platform-mediated gig work in Nordic taxi and food delivery industries. *Nordic Journal of Working Life Studies.* [doi:10.18291/njwls.152855](https://doi.org/10.18291/njwls.152855)
 * **Alfonsson, J.** (2024). Dismantling employees' power resources in the Swedish labour market: An ideological theoretical approach. *Nordic Welfare Research, 9*(1), 28–47. [doi:10.18261/nwr.9.1.3](https://doi.org/10.18261/nwr.9.1.3)

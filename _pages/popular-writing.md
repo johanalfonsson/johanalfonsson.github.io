@@ -8,6 +8,7 @@ Op-eds, cultural criticism and essays in newspapers and magazines. Most texts ar
 
 2026
 ------
+* [AI är inte Kristi återkomst – i stället gör det Elon Musk rikare](https://arbetet.se/2026/10/05/ai-ar-inte-kristi-aterkomst-i-stallet-gor-det-elon-musk-rikare/). *Arbetet*, Debate.
 * How gig capitalism came to thrive in Nordic labor markets. *Jacobin.* With S. Oppegaard, S. Rasmussen & J. Immonen.
 
 2025

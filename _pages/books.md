@@ -17,6 +17,7 @@ The working class is still Sweden's largest class and essential to how society f
 </div>
 
 <div class="book" markdown="1">
+<img class="book__cover" src="/images/cover-det-otrygga-arbetslivet.jpg" alt="Cover of Det otrygga arbetslivet i Sverige">
 <div class="book__text" markdown="1">
 ## Det otrygga arbetslivet i Sverige: Dess framväxt och konsekvenser
 
@@ -28,6 +29,7 @@ A textbook on why insecure work has grown in Sweden and what it means for those 
 </div>
 
 <div class="book" markdown="1">
+<img class="book__cover" src="/images/cover-alienation-och-arbete.jpg" alt="Cover of Alienation och arbete">
 <div class="book__text" markdown="1">
 ## Alienation och arbete: Unga behovsanställdas villkor i den flexibla kapitalismen
 

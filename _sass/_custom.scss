@@ -188,6 +188,22 @@ body::after {
 .greedy-nav {
   background: $ink;
 
+  /* Lets each menu link carry its own left-to-right position (see
+     _data/navigation.yml) while the first link in the list stays
+     visible on phones */
+  .visible-links {
+    display: inline-flex;
+    align-items: center;
+
+    li {
+      display: block;
+    }
+
+    #theme-toggle {
+      order: 99;
+    }
+  }
+
   a {
     color: $paper;
   }

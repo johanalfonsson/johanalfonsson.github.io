@@ -1,21 +1,31 @@
-# The links in the menu at the top of the site, in the order they appear.
-# Remove a block (title + url) to remove that link from the menu.
+# The links in the menu at the top of the site.
+#
+# The list order decides which links stay visible on narrow screens: the
+# first link is the one shown next to the name on a phone, and the rest move
+# into the menu button. "order" sets the left-to-right order on wide screens.
+# Remove a block (title + url + order) to remove that link from the menu.
 
 main:
+  - title: "Books"
+    url: /books/
+    order: 3
+
   - title: "Research"
     url: /research/
+    order: 1
 
   - title: "Articles"
     url: /articles/
-
-  - title: "Books"
-    url: /books/
+    order: 2
 
   - title: "Book Chapters"
     url: /book-chapters/
+    order: 4
 
   - title: "Other Academic"
     url: /other-academic/
+    order: 5
 
   - title: "Popular Writing"
     url: /popular-writing/
+    order: 6

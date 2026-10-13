@@ -11,7 +11,7 @@ I am an associate senior lecturer at Halmstad University and affiliated with the
 
 My research focuses mainly on work, class and precarious employment, including class theory, the conditions of the working class and alienation. I have written about on-call work and the growth of insecure employment in Sweden, about low-wage jobs and wage inequality in the Nordic model, and about how split shifts affect staff in elderly care.
 
-My research projects are described under [Research](/research/). Full lists are under [Articles](/articles/), [Books](/books/), [Book Chapters](/book-chapters/) and [Other Academic Writing](/other-academic/), and op-eds and essays under [Popular Writing](/popular-writing/).
+My research projects are described under [Research](/research/). Full lists are under [Articles](/articles/), [Books](/books/), [Book Chapters](/book-chapters/) and [Other Academic Writing](/other-academic/), op-eds and essays under [Popular Writing](/popular-writing/), and podcast appearances under [Podcasts](/podcasts/).
 
 Latest publication
 ------

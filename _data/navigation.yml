@@ -29,3 +29,7 @@ main:
   - title: "Popular Writing"
     url: /popular-writing/
     order: 6
+
+  - title: "Podcasts"
+    url: /podcasts/
+    order: 7

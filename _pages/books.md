@@ -12,7 +12,7 @@ author_profile: true
 *What Happened to the Working Class? On Betrayal, Power and Inequality in Sweden*  
 Arkiv förlag, 2025
 
-The working class is still Sweden's largest class and essential to how society functions, yet its position has steadily weakened. The book shows how deliberate policy since the 1990s has eroded workers' structural and collective power resources, and documents widening class gaps in wages, job security, health, life expectancy and housing. During the recent inflation crisis, workers lost seven to nine years of real wage growth, against two to three years for the middle class. Where earlier generations could improve their conditions together, the main way up today is to leave the working class, which is no answer for the healthcare workers, childcare staff, builders and refuse collectors society depends on. With a foreword by Göran Therborn.
+The working class is still Sweden's largest class and essential to how society functions, yet its position has steadily weakened. The book shows how deliberate policy since the 1990s has eroded workers' structural and collective power resources, and documents widening class gaps in wages, job security, health, life expectancy and housing. During the recent inflation crisis, workers lost seven to nine years of real wage growth, against two to three years for the middle class. With a foreword by Göran Therborn.
 </div>
 </div>
 
@@ -24,7 +24,7 @@ The working class is still Sweden's largest class and essential to how society f
 *Precarious Working Life in Sweden: Its Emergence and Consequences*  
 Studentlitteratur, 2022
 
-A textbook on why insecure work has grown in Sweden and what it means for those affected. The book moves from global changes in capitalism, from Fordist mass production to a flexible service economy, to the Swedish labour market. Building on Walter Korpi's power resources theory, it explains insecurity as the outcome of shifting balances in four power resources: union strength, unemployment, institutions such as employment protection and the welfare system, and human capital. It identifies eight dimensions of insecurity, from employment security to wages, and examines three groups in depth: temporary employees, agency workers and gig workers.
+A textbook on why insecure work has grown in Sweden and what it means for those affected. The book moves from global changes in capitalism, from Fordist mass production to a flexible service economy, to the Swedish labour market. Building on Walter Korpi's power resources theory, it explains insecurity as the outcome of shifting balances in four power resources: union strength, unemployment, institutions such as employment protection and the welfare system, and individual power. It identifies eight dimensions of insecurity, from employment security to wages, and examines three groups in depth: temporary employees, agency workers and gig workers.
 </div>
 </div>
 
